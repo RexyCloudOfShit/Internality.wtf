@@ -63,7 +63,7 @@ local library = {
     opening = false;
     hasInit = false;
     cheatname = 'Internality.wtf';
-    gamename = gamePlaceId;
+    gamename = game.PlaceId;
     fileext = startupArgs.fileext or '.txt';
 }
 
@@ -521,7 +521,7 @@ function library:init()
 
     makefolder(self.cheatname)
     makefolder(self.cheatname..'/assets')
---    makefolder(self.cheatname..'/'..self.gamename)
+    makefolder(self.cheatname..'/'..self.gamename)
     makefolder(self.cheatname..'/'..self.gamename..'/configs');
 
     function self:SetTheme(theme)
